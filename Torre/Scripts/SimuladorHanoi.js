@@ -109,17 +109,14 @@ function VerificarSimulador() {
                          qtsjogadas = qtsjogadas + 1;
                          jogadas = jogadas + "<li>" + resultado[i].movimento_De + "->" + resultado[i].movimento_Para + "</li>";
                      } else {
-                         terminochamada = resultado[i].data_fim_simulacao;
+                         terminochamada = timeConverter(formatar(resultado[i].data_fim_simulacao));
                      }
-
-
                  }
-
 
                  $("#divhistorico").html(jogadas);
                  $("#qtddiscos").html(QtdDiscos);
                  $("#iniciochamada").html(timeConverter(formatar(  resultado[0].data_inicio_simulacao)));
-                 $("#terminochamada").html(timeConverter(formatar(terminochamada)));
+                 $("#terminochamada").html(terminochamada);
 
 
                  solve(QtdDiscos, qtsjogadas);
