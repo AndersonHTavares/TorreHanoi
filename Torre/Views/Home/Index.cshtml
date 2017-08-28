@@ -1,0 +1,120 @@
+﻿
+<!--<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+<h2>  @ViewData["valor"]  </h2>-->
+
+
+<style>
+
+    .home {
+    padding-top: 24px;
+    }
+
+    .container {
+    max-width: 1345px;
+}
+
+</style>
+
+<div class="container">
+
+    <div class="home">
+        <div class="container">
+
+            <h4><p class="card-text">Selecione os discos para simulacao</p></h4><br /><br />
+            <div class="jumbotro">
+
+                <div class="row">
+                    <div class="col-md-5">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                Hanoi 1 <br>
+                               Qtd discos:
+                                <select id="cboHanoi1" class="btn btn-secondary dropdown-toggle">
+                                    <option></option>
+                                </select><br /><br />
+                                <div id="HanoiID1" ></div>
+
+                             
+                            </div>
+
+                            <div class="col-md-3">
+                                Hanoi 2 <br>
+                                Qtd discos:
+                                <select id="cboHanoi2" class="btn btn-secondary dropdown-toggle"><option></option>
+                                </select><br /><br />
+                                <div id="HanoiID2"></div>
+                                <br /><br />
+                             
+                            </div>
+
+                            <div class="col-md-3">
+                                Hanoi 3 <br>
+                                Qtd discos:
+                                <select id="cboHanoi3" class="btn btn-secondary dropdown-toggle"><option></option>
+                                </select><br /><br />
+                                <div id="HanoiID3"></div>
+                                <br /><br />
+                               
+                            </div>
+
+                        </div>
+
+                        <br />
+                        <input type="submit" class="btn btn-primary" value="Simular Hanoi" onclick="javascript: GerarSimulador()" />
+
+                        <a class="btn btn-primary" href="/Log/Log">Log Hanoi</a>
+
+                        @*<input type="submit" class="btn btn-primary" value="Log Hanoi"  />*@
+
+                      </div>
+
+                 
+
+                    <div style="text-align:center">
+                      <div class="col-md-6">Verificar Hanoi ID </div>
+                        <input id="SimuladorId"> 
+                        <a href="#" class="btn btn-primary" onclick="javascript: VerificarSimulador()">Monitorar</a>
+                       
+                        <div>
+
+                            <div id="controls"></div>
+
+                            <br />
+                            <div id="historicohanoi" style="font-size:13px">
+
+                                 Qtd Discos: <label id="qtddiscos"> </label>   <br />
+                                 Data do Chamado: <label id="iniciochamada">  </label><br />
+                                 Termino do chamado:  <label id="terminochamada">  </label> <br />
+                           </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-1">
+                                    <div>
+                                        <div id='divhistorico'></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+
+                                    <div class="containerstacks">
+                                        <div id="stacks"></div>
+                                    </div>
+                                </div>
+
+                                
+                           </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+    </div>
+
+
+
+    </div>
