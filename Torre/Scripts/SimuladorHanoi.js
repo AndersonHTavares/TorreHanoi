@@ -13,7 +13,7 @@ $(document).ready(function () {
     cboHanoi2.find('option').remove();
     cboHanoi3.find('option').remove();
 
-            for (i = 1; i < 16; i++) {
+            for (i = 1; i < 11; i++) {
                 $('<option>').val(i).text(i).appendTo(cboHanoi1);
                 $('<option>').val(i).text(i).appendTo(cboHanoi2);
                 $('<option>').val(i).text(i).appendTo(cboHanoi3);
